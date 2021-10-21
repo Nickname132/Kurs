@@ -1,0 +1,37 @@
+﻿<Window x:Class="Terms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Terms"
+        mc:Ignorable="d"
+        Title="made by Alisher Achilov" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="204*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="125*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Image Source="Resources/knowledge.png" HorizontalAlignment="Left" Width="78"></Image>
+
+        <TextBlock TextDecorations="Underline" FontFamily="Tahoma Bold" Text="Увлекательная терминология"  FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Margin="169,18,139,10" Width="484" Grid.ColumnSpan="3"/>
+        <Grid Background="#bae3e8" Panel.ZIndex="-2" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="198*"/>
+                <ColumnDefinition Width="71*"/>
+                <ColumnDefinition Width="127*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid Grid.Row="2" Background="#445c93" Grid.ColumnSpan="3"></Grid>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name="MainFrame" Grid.ColumnSpan="3"/>
+        <Button Content="Назад"  FontWeight="Bold" FontFamily="Gil Sans MT" FontStyle="Oblique" Background='pink' Name="BtnBack" HorizontalAlignment="Right"
+ Margin="0,22,25,23" Click="BtnBack_Click1" Grid.Column="2" Width="80"/>
+
+    </Grid>
+</Window>
+
